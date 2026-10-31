@@ -10,7 +10,12 @@ const upload = multer({
     fileSize: 20 * 1024 * 1024,
   },
 });
-
+router.get("/transcribe", (req, res) => {
+  res.json({
+    success: true,
+    message: "Transcription API is working. Use POST to upload audio.",
+  });
+});
 router.post("/transcribe", upload.single("audio"), async (req, res) => {
   try {
     if (!req.file) {
