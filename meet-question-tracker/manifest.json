@@ -11,7 +11,7 @@
   ],
   "host_permissions": [
     "https://meet.google.com/*",
-    "http://localhost:5000/*"
+    "https://YOUR-PROJECT.vercel.app/*"
   ],
   "background": {
     "service_worker": "background/background.js",

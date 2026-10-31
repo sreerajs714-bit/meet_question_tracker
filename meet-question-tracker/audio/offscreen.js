@@ -127,10 +127,13 @@ async function uploadAudio(audioBlob) {
 
   console.log("Uploading complete audio to backend...");
 
-  const response = await fetch("http://localhost:5000/api/transcribe", {
-    method: "POST",
-    body: formData,
-  });
+  const response = await fetch(
+    "https://meet-question-tracker.vercel.app/api/transcribe",
+    {
+      method: "POST",
+      body: formData,
+    },
+  );
 
   if (!response.ok) {
     const error = await response.text();
