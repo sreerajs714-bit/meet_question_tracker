@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Meet Question Tracker",
+  "version": "1.0.0",
+  "description": "Capture and extract interview questions from Google Meet.",
+  "permissions": [
+    "storage",
+    "sidePanel",
+    "tabCapture",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*",
+    "http://localhost:5000/*"
+  ],
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Start Meet Question Tracker"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/sidepanel.html"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Question Tracker</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+
+  <header>
+    <h2>Question Tracker</h2>
+    <p>Google Meet Interview Assistant</p>
+  </header>
+
+  <section class="toolbar">
+    <span id="count">0 Questions</span>
+    <button id="exportBtn">Export TXT</button>
+  </section>
+
+  <section class="controls">
+    <button id="recordBtn">Record</button>
+    <button id="clearBtn">Clear Questions</button>
+  </section>
+
+  <main id="questionList">
+    <div class="empty">
+      Waiting for interview questions...
+    </div>
+  </main>
+
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>
